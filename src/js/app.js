@@ -44,6 +44,9 @@ const jtrello = (function() {
 
     DOM.$newCardForm.on('submit', createCard);
     DOM.$deleteCardButton.on('click', deleteCard);
+
+    DOM.$cards.draggable();
+    DOM.$lists.droppable();
   }
 
   /* ============== Metoder för att hantera listor nedan ============== */
